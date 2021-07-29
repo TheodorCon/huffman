@@ -6,13 +6,13 @@ Since then, I have been dabling a bit more in Haskell, and this repository is my
 
 `main-old.hs` is the original file, commented and explained. `main.hs` is the rewritten version. The main two functions of the module are:
 
-_ `toCodeFile` - turns a file an encoded file, given their paths
-_ `fromCodeFile` - turns an encoded file into the original file, given their paths
+- `toCodeFile` - turns a file an encoded file, given their paths
+- `fromCodeFile` - turns an encoded file into the original file, given their paths
 
 To try it out, run: 
 
 ```shell
 ghci ./main.hs
-toCodeFile <source_file> <target_encoding_file>
-fromCodeFile <target_encoding_file> <target_decoded_file>
+toCodeFile "input.txt" "output"
+fromCodeFile "output" "result.txt"
 ```
